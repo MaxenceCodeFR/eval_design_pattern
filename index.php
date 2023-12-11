@@ -38,6 +38,7 @@
 //Require_once ou include fonctionne. Permet de recuperer le fichier a la manière d'un namespace mais sans namespacedu coup parce que sinon on aurait appeler ça 'namespace' mais l'a c'en est pas un
 require_once 'CompteBancaireFactory.php';
 require_once 'CompteBancaire.php';
+require_once 'Compte/Pel.php';
 
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -53,6 +54,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 $id1 = CompteBancaireFactory::creerCompte(123456, "Jean", 1000, "EUR", true);
 $id2 = CompteBancaireFactory::creerCompte(12345, "Jean", 1000, "EUR", true);
 $id3 = CompteBancaireFactory::creerCompte(123456, "Jean", 1000, "EUR", true);
+$id4 = CompteBancaireFactory::creerCompte(123456, "Jean", 1000, "EUR", true);
 ?>
 
 <!-- <form method="post">
